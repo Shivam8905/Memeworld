@@ -1,0 +1,71 @@
+.top{
+    display:flex;
+    justify-content:space-between;
+    background-color: lightgray;
+}
+.p1{
+    width: 4vw;
+    border: .3vw double black;
+    border-radius: 50%;
+    
+}
+.top2{
+    display: flex;
+    margin: 3vh;
+}
+ /* .memepic{
+    height:120vh;
+    width: 80vw;
+}  */
+.Button1{
+    margin: 1vw;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+    
+}
+.inbutton{
+    margin: 1vw;
+    padding: 1vw;
+    background-color: rgb(170, 154, 109);
+    border-radius: 20%;
+    ;
+}
+.inbutton:hover{
+    background-color: rgb(241, 30, 160);
+    color: rgb(42, 165, 42);
+    font-weight: bolder;
+}
+.whole{
+    border: .5vw double black;
+    background-color: beige;
+    margin: 1vw;
+}
+.foot{
+    height: 10vh;
+    background-color: greenyellow;
+    
+}
+
+.Button2{
+    margin: 1vw;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    
+    
+}
+.b2{
+    padding: 1vw;
+    background-color: rgb(250, 93, 224);
+    border-radius: 25%;
+}
+.b2:hover{
+    background-color: black;
+    color: aliceblue;
+}
+body{
+    background-color: aquamarine;
+}

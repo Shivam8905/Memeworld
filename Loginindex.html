@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+   <meta charset="utf-8">
+   <title>Signup for LueurTech</title>
+   <link rel="stylesheet" href="logincss.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="title_signup">
+         Signup Form
+      </div>
+      <div class="form-container">
+
+         <div class="form-inner">
+
+            <form class="signup">
+               <div class="field">
+                  <input type="text" placeholder="Name" required="" required="">
+               </div>
+               <div class="field">
+                  <input type="text" placeholder="Email Address" required="">
+               </div>
+               <div class="field">
+                  <input type="text" id="phno" name="phno" placeholder="Phone No." maxlength="10">
+               </div>
+               <select class="field" id="gender">
+                  <option class="field" value="Gender" disabled="" selected="" hidden="">Gender</option>
+                  <option value="field">Male</option>
+                  <option value="field">Female</option>
+                  <option value="field">Prefer not to say</option>
+               </select>
+               <div class="field">
+                  <input type="password" id="pswd1" placeholder="Password" required="true" minlength="8">
+               </div>
+               <div class="field">
+                  <input type="password" id="pswd2" placeholder="Confirm password" required="true" minlength="8">
+               </div>
+               <div class="submit_reset">
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit"> value="Submit">
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="reset" value="Reset">
+                  </div>
+
+               </div>
+
+            </form>
+         </div>
+      </div>
+   </div>
+   <p>
+      After filling the form properly when you will click on submit button and then ok in popup you will reach to
+      main page of the website
+   </p>
+
+   <script>
+
+      let submitBtn = document.querySelector('[type="submit"]')
+      document.querySelector('form').addEventListener('submit', (e) => {
+         e.preventDefault()
+      })
+      submitBtn.addEventListener('click', (e) => {
+         var pw1 = document.querySelector("#pswd1").value;
+         var pw2 = document.querySelector("#pswd2").value;
+         console.log(pw1.length)
+         console.log(pw2.length)
+         if ((pw1.length >= 8 && pw2.length >= 8) && pw1 == pw2) {
+            alert("Wellcome to Memeworld");
+            setTimeout(() => { window.location.href = 'index.html' }, 1000)
+         } else {
+            alert('Oops! please recheck')
+         }
+      })
+   </script>
+</body>
+
+</html>
